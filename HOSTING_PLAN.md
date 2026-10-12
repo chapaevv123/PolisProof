@@ -1,8 +1,9 @@
-# PolisProof hosting plan — prepared, not deployed
+# PolisProof hosting record
 
 ## Recommendation
 
-Use **Render Free Web Service** for the public replay demo. PolisProof is a
+The public replay demo is deployed as a **Render Web Service** at
+`https://polisproof.onrender.com`. PolisProof is a
 small state-free Python HTTP service, needs no database, and already has a
 Dockerfile. Render supports Python/Docker web services and supplies a public
 TLS URL. Configure health check `/api/health`, root directory `track_2b`, and
@@ -37,7 +38,6 @@ demo should remain replay mode for reliability and zero inference spend.
 
 ## Render preparation
 
-The repository includes `render.yaml`. After owner approval and GitHub
-publication: create a Render Blueprint from the repository, confirm the Free
-plan, deploy, wait for `/api/health`, and verify the full demo in a private
-browser window. No payment method or paid upgrade is required for this plan.
+The repository includes `render.yaml`. The deployed service reports HTTP 200
+at `/api/health` with `mode: REPLAY` and `live_configured: false`. Repository
+publication and deployment are complete; no paid upgrade has been initiated.

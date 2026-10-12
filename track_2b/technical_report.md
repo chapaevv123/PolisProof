@@ -3,7 +3,9 @@
 - **Track:** Track 2B — Own Project
 - **Event:** Hack Apertus Online 2026
 - **Author / developer:** MagnatSV
-- **Demo:** video URL pending owner publication
+- **Repository:** https://github.com/chapaevv123/PolisProof
+- **Public replay demo:** https://polisproof.onrender.com
+- **Demo video:** https://youtu.be/Wo-tzCz955A
 
 ## 1. Summary
 

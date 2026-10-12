@@ -52,21 +52,16 @@ USD 0.50 sprint cap.
 - Honest live evidence and benchmark harness: complete; corpus-level quality
   results unavailable because the provider denied the bounded sample.
 - Technical PDF: complete, six pages.
-- Video package: script, timing, capture instructions, and checklist complete;
-  MP4 recording and upload remain owner actions.
-- Public repository package: content-ready, but this directory has no Git
-  metadata and no public URL. Publication was intentionally not performed.
+- Video package: published at `https://youtu.be/Wo-tzCz955A` (86 seconds).
+- Public repository: `https://github.com/chapaevv123/PolisProof`.
+- Public replay demo: `https://polisproof.onrender.com`.
 - Hackathon submission: checklist and copy ready; intentionally not submitted.
 
 ## Remaining owner actions
 
-1. Record the scripted demo at 1920×1080 and keep it at or below 120 seconds.
-2. Review the staged repository contents and included licence notices.
-3. Commit or copy into the official GitHub template, publish, and
-   verify the public URL in a private browser window.
-4. Upload the video and verify its public URL.
-5. Securely inject a scoped `HF_TOKEN` only if another provider preflight or
+1. Review the published repository, replay demo, video, and licence notices.
+2. Securely inject a scoped `HF_TOKEN` only if another provider preflight or
    benchmark attempt is desired; do not paste it into chat or files.
-6. Add both URLs to `track_2b/docs/SUBMISSION_DRAFT.md`, complete private form
+3. Complete private form
    fields, submit, retain confirmation evidence, and only then change
    `NOT_SUBMITTED`.

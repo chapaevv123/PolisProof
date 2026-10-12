@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" role="img" aria-labelledby="title desc">
+  <title id="title">PolisProof — Sovereign AI. Verifiable Public Decisions.</title>
+  <desc id="desc">Dark navy PolisProof banner showing a multilingual evidence pipeline from documents through Apertus and deterministic verification to an audit receipt.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061421"/><stop offset="1" stop-color="#0d2a3b"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#34d7ed" stop-opacity=".22"/><stop offset="1" stop-color="#34d7ed" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1440" height="420" fill="url(#bg)"/>
+  <circle cx="1110" cy="40" r="360" fill="url(#glow)"/>
+  <g fill="none" stroke="#244054"><path d="M810 106h472M810 314h472"/><path d="M859 106v208M1073 106v208M1282 106v208"/></g>
+  <g transform="translate(86 75)">
+    <rect width="58" height="58" fill="#34d7ed"/><text x="29" y="39" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#061421">P</text>
+    <text x="77" y="37" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#f3f8fb">POLISPROOF</text>
+    <text y="126" font-family="Georgia,serif" font-size="56" fill="#f3f8fb">Sovereign AI.</text>
+    <text y="190" font-family="Georgia,serif" font-size="56" fill="#34d7ed">Verifiable Public Decisions.</text>
+    <text y="237" font-family="Arial,sans-serif" font-size="17" fill="#9fb7c5">Apertus extracts claims. Evidence-bound rules decide.</text>
+    <g transform="translate(0 278)" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">
+      <rect width="180" height="34" rx="3" fill="#102a3d" stroke="#34d7ed"/><text x="90" y="22" text-anchor="middle" fill="#9cecf5">HACK APERTUS 2026</text>
+      <rect x="192" width="104" height="34" rx="3" fill="#102a3d" stroke="#55e3aa"/><text x="244" y="22" text-anchor="middle" fill="#55e3aa">TRACK 2B</text>
+    </g>
+  </g>
+  <g transform="translate(840 132)" font-family="Arial,sans-serif">
+    <g><rect width="170" height="70" rx="5" fill="#102a3d" stroke="#34d7ed"/><text x="85" y="30" text-anchor="middle" font-size="12" fill="#34d7ed">MULTILINGUAL</text><text x="85" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#f3f8fb">SOURCE RECORDS</text></g>
+    <path d="M170 35h46" stroke="#34d7ed"/><path d="m208 29 9 6-9 6" fill="none" stroke="#34d7ed"/>
+    <g transform="translate(217)"><rect width="170" height="70" rx="5" fill="#102a3d" stroke="#34d7ed"/><text x="85" y="30" text-anchor="middle" font-size="12" fill="#34d7ed">APERTUS 8B → 70B</text><text x="85" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#f3f8fb">ATOMIC CLAIMS</text></g>
+    <path d="M387 35h46" stroke="#34d7ed"/><path d="m425 29 9 6-9 6" fill="none" stroke="#34d7ed"/>
+    <g transform="translate(434)"><rect width="170" height="70" rx="5" fill="#102a3d" stroke="#ff5d68"/><text x="85" y="30" text-anchor="middle" font-size="12" fill="#ff8b93">DETERMINISTIC</text><text x="85" y="50" text-anchor="middle" font-size="15" font-weight="700" fill="#f3f8fb">EVIDENCE GATE</text></g>
+    <g transform="translate(217 116)"><rect width="170" height="54" rx="5" fill="#34d7ed"/><text x="85" y="33" text-anchor="middle" font-size="14" font-weight="700" fill="#061421">AUDIT RECEIPT</text></g>
+    <path d="M302 70v46" stroke="#34d7ed"/><path d="m296 108 6 9 6-9" fill="none" stroke="#34d7ed"/>
+  </g>
+</svg>

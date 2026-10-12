@@ -3,8 +3,9 @@
 - Project name: **PolisProof**
 - Creator / developer: **MagnatSV**
 - Track: **2B — Apertus Adoption: Own Project**
-- Repository URL: **PENDING OWNER PUBLICATION**
-- Demo video URL: **PENDING OWNER UPLOAD**
+- Repository URL: **https://github.com/chapaevv123/PolisProof**
+- Public demo URL: **https://polisproof.onrender.com**
+- Demo video URL: **https://youtu.be/Wo-tzCz955A**
 - Technical report: `MagnatSV_Report.pdf`
 - Dataset URL: omitted; dataset publication is optional
 

@@ -40,9 +40,9 @@ condition. PolisProof makes those failures visible and reviewable.
   limitation that the frozen corpus is still unrun.
 - [x] Replace pending team/name fields in the technical report (`MagnatSV`).
 - [x] Render `technical_report.md` to `MagnatSV_Report.pdf` (six pages).
-- [ ] Record and upload a public demo video no longer than two minutes.
-- [ ] Create a public repository from the official template and keep `track_2b/` unchanged (current package has no Git metadata).
-- [ ] Confirm repository URL and video URL work in a private browser window.
+- [x] Record and upload a public demo video no longer than two minutes (86 seconds).
+- [x] Publish the public repository with the prepared `track_2b/` project.
+- [x] Confirm repository, Render demo, and video URLs are publicly readable.
 - [ ] Optionally publish the evaluation dataset using the official HF dataset template.
 - [ ] Complete the official form at `https://hackapertus.ch/online-hack/submissions` before 16 October 2026, 12:00 CEST / 13:00 Europe/Kyiv.
 - [ ] Save submission confirmation evidence; only then mark `SUBMITTED`.

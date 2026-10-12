@@ -1,0 +1,4 @@
+{
+  "mode":"RECORDED_REPLAY","model":"swiss-ai/Apertus-v1.5-8B","latency_ms":410,"input_tokens":96,"output_tokens":108,
+  "claims":[{"claim_id":"clean1","claim_type":"APPROVAL","statement":"The council approved EUR 25,000 for the library roof, conditional on structural inspection.","actor":"Council","action":"fund library roof","amount":"25000","currency":"EUR","date":"2026-10-10","condition":"structural inspection","decision_status":"APPROVED","source_artifact":"resolution_en","source_span":"The council approved EUR 25,000 for the library roof on 2026-10-10, conditional on a structural inspection.","language":"en","confidence":0.99}]
+}

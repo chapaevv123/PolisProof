@@ -1,0 +1,14 @@
+[
+  {"id":"clean_en","expected":"VERIFIED","fault":"NONE"},
+  {"id":"clean_de","expected":"VERIFIED","fault":"NONE"},
+  {"id":"amount_de_fr","expected":"BLOCKED","fault":"AMOUNT_CONFLICT"},
+  {"id":"currency_conflict","expected":"BLOCKED","fault":"CURRENCY_CONFLICT"},
+  {"id":"date_conflict","expected":"BLOCKED","fault":"DATE_CONFLICT"},
+  {"id":"missing_condition","expected":"BLOCKED","fault":"MISSING_CONDITION"},
+  {"id":"negation","expected":"BLOCKED","fault":"NEGATION_CONFLICT"},
+  {"id":"unsupported","expected":"BLOCKED","fault":"UNSUPPORTED_CLAIM"},
+  {"id":"missing_span","expected":"BLOCKED","fault":"SOURCE_SPAN_NOT_FOUND"},
+  {"id":"hash_mismatch","expected":"BLOCKED","fault":"SOURCE_HASH_MISMATCH"},
+  {"id":"prompt_injection","expected":"HUMAN_REVIEW","fault":"PROMPT_INJECTION_QUARANTINED"},
+  {"id":"ambiguous","expected":"HUMAN_REVIEW","fault":"AMBIGUOUS_EVIDENCE"}
+]

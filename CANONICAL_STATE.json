@@ -1,0 +1,19 @@
+{
+  "project": "PolisProof",
+  "competition": "Hack Apertus 2026",
+  "track": "2B",
+  "canonical_project_id": 49937,
+  "participation_id": "part_0dc8f320acedb39c7562574b",
+  "build_id": "build_f201f8102e60ea6b83a03eca",
+  "reconciliation": "INSERTED_RECONCILIATION",
+  "credits": {
+    "status": "CONFIRMED_BY_OWNER_SCREENSHOT",
+    "amount_usd": 10.0,
+    "spent_this_pass_usd": 0.000080925,
+    "remaining_estimate_usd": 9.999919075
+  },
+  "participation_status": "BUILDING",
+  "project_status": "LOCALLY_FUNCTIONAL_LIVE_SMOKE_VERIFIED",
+  "submission_status": "NOT_SUBMITTED",
+  "updated_at": "2026-10-12T20:47:29.885442+00:00"
+}

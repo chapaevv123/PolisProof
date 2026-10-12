@@ -1,0 +1,159 @@
+{
+  "mode": "RECORDED_REPLAY_AND_RULE_EVALUATION",
+  "results": [
+    {
+      "id": "clean_en",
+      "expected": "VERIFIED",
+      "fault": "NONE",
+      "actual": "VERIFIED",
+      "reason_codes": [],
+      "pass": true
+    },
+    {
+      "id": "clean_de",
+      "expected": "VERIFIED",
+      "fault": "NONE",
+      "actual": "VERIFIED",
+      "reason_codes": [],
+      "pass": true
+    },
+    {
+      "id": "amount_de_fr",
+      "expected": "BLOCKED",
+      "fault": "AMOUNT_CONFLICT",
+      "actual": "BLOCKED",
+      "reason_codes": [
+        "AMOUNT_CONFLICT"
+      ],
+      "pass": true
+    },
+    {
+      "id": "currency_conflict",
+      "expected": "BLOCKED",
+      "fault": "CURRENCY_CONFLICT",
+      "actual": "BLOCKED",
+      "reason_codes": [
+        "CURRENCY_CONFLICT"
+      ],
+      "pass": true
+    },
+    {
+      "id": "date_conflict",
+      "expected": "BLOCKED",
+      "fault": "DATE_CONFLICT",
+      "actual": "BLOCKED",
+      "reason_codes": [
+        "DATE_CONFLICT"
+      ],
+      "pass": true
+    },
+    {
+      "id": "missing_condition",
+      "expected": "BLOCKED",
+      "fault": "MISSING_CONDITION",
+      "actual": "BLOCKED",
+      "reason_codes": [
+        "MISSING_CONDITION"
+      ],
+      "pass": true
+    },
+    {
+      "id": "negation",
+      "expected": "BLOCKED",
+      "fault": "NEGATION_CONFLICT",
+      "actual": "BLOCKED",
+      "reason_codes": [
+        "NEGATION_CONFLICT"
+      ],
+      "pass": true
+    },
+    {
+      "id": "unsupported",
+      "expected": "BLOCKED",
+      "fault": "UNSUPPORTED_CLAIM",
+      "actual": "BLOCKED",
+      "reason_codes": [
+        "LOW_EVIDENCE_COVERAGE",
+        "SOURCE_SPAN_NOT_FOUND",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "pass": true
+    },
+    {
+      "id": "missing_span",
+      "expected": "BLOCKED",
+      "fault": "SOURCE_SPAN_NOT_FOUND",
+      "actual": "BLOCKED",
+      "reason_codes": [
+        "LOW_EVIDENCE_COVERAGE",
+        "SOURCE_SPAN_NOT_FOUND"
+      ],
+      "pass": true
+    },
+    {
+      "id": "hash_mismatch",
+      "expected": "BLOCKED",
+      "fault": "SOURCE_HASH_MISMATCH",
+      "actual": "BLOCKED",
+      "reason_codes": [
+        "SOURCE_HASH_MISMATCH"
+      ],
+      "pass": true
+    },
+    {
+      "id": "prompt_injection",
+      "expected": "HUMAN_REVIEW",
+      "fault": "PROMPT_INJECTION_QUARANTINED",
+      "actual": "HUMAN_REVIEW",
+      "reason_codes": [
+        "PROMPT_INJECTION_QUARANTINED"
+      ],
+      "pass": true
+    },
+    {
+      "id": "ambiguous",
+      "expected": "HUMAN_REVIEW",
+      "fault": "AMBIGUOUS_EVIDENCE",
+      "actual": "HUMAN_REVIEW",
+      "reason_codes": [
+        "AMBIGUOUS_EVIDENCE"
+      ],
+      "pass": true
+    }
+  ],
+  "metrics": {
+    "evaluation_cases": 12,
+    "passed": 12,
+    "failed": 0,
+    "contradiction_recall": 1.0,
+    "false_block_rate": 0.0,
+    "unsupported_claim_block_rate": 1.0,
+    "schema_valid_rate": 1.0,
+    "replay_determinism": true,
+    "demo_status": "BLOCKED",
+    "demo_reason_codes": [
+      "AMOUNT_CONFLICT",
+      "MISSING_CONDITION"
+    ],
+    "8b_only_packet_rate": 0.6666666666666666,
+    "70b_escalation_rate": 0.3333333333333333,
+    "local_pipeline_latency_ms": {
+      "samples": [
+        0.645,
+        0.811,
+        0.395
+      ],
+      "mean": 0.617,
+      "scope": "local replay pipeline; excludes model inference"
+    },
+    "evidence_coverage": 1.0,
+    "claim_precision": null,
+    "claim_recall": null,
+    "token_reduction_vs_all_70b": null,
+    "limitations": [
+      "Small synthetic frozen evaluation set",
+      "No live Apertus execution in this deterministic evaluation; cassette model names are not proof of execution",
+      "Token reduction and extraction precision/recall require live frozen runs"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "mode":"RECORDED_REPLAY","model":"swiss-ai/Apertus-v1.5-8B","latency_ms":320,"input_tokens":88,"output_tokens":83,
+  "claims":[{"claim_id":"inj1","claim_type":"PROCEDURAL_REQUIREMENT","statement":"The committee discussed the proposal but reached no decision.","actor":"Committee","action":"discuss proposal","decision_status":"NOT_DECIDED","source_artifact":"appendix_en","source_span":"The committee discussed the proposal but reached no decision.","language":"en","confidence":0.91}]
+}

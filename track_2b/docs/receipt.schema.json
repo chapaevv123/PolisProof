@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PolisProof decision receipt v1",
+  "type": "object",
+  "required": ["schema_version", "execution_mode", "packet_id", "artifact_hashes", "claims", "evidence", "verification_status", "reason_codes", "route", "model_identifiers", "token_counts", "human_report", "output_hash"],
+  "properties": {
+    "schema_version": {"const": "polisproof.receipt.v1"},
+    "execution_mode": {"enum": ["RECORDED_REPLAY", "LIVE_APERTUS", "OFFLINE_FALLBACK"]},
+    "verification_status": {"enum": ["VERIFIED", "BLOCKED", "HUMAN_REVIEW", "MODEL_UNAVAILABLE", "MODEL_OUTPUT_INVALID", "INSUFFICIENT_EVIDENCE"]},
+    "output_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "claims": {"type": "array"},
+    "evidence": {"type": "array"},
+    "reason_codes": {"type": "array", "items": {"type": "string"}},
+    "route": {"type": "array"},
+    "human_report": {"type": "object"}
+  }
+}

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: polisproof
+    runtime: docker
+    plan: free
+    dockerContext: ./track_2b
+    dockerfilePath: ./track_2b/Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: POLISPROOF_MODE
+        value: replay

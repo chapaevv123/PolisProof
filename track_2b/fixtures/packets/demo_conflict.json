@@ -1,0 +1,10 @@
+{
+  "packet_id": "demo_conflict",
+  "title": "Synthetic multilingual municipal energy-center decision",
+  "provenance": {"kind": "synthetic", "creator": "PolisProof contributors", "license": "CDLA-Permissive-2.0"},
+  "artifacts": [
+    {"artifact_id":"minutes_de","title":"Council minutes","language":"de","version":"final","content":"Beschluss 7. Der Rat genehmigt für das Energiezentrum höchstens 40.000 EUR. Die Freigabe gilt vorbehaltlich der rechtlichen Prüfung."},
+    {"artifact_id":"annex_fr","title":"Earlier budget annex","language":"fr","version":"draft","content":"Annexe budgétaire. Le budget proposé pour le centre énergétique est de 60 000 EUR."},
+    {"artifact_id":"note_it","title":"Secretary note","language":"it","version":"final","content":"Nota della segreteria. L'approvazione è valida solo dopo il controllo legale."}
+  ]
+}

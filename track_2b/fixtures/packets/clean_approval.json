@@ -1,0 +1,6 @@
+{
+  "packet_id":"clean_approval",
+  "title":"Synthetic clean approval",
+  "provenance":{"kind":"synthetic","creator":"PolisProof contributors","license":"CDLA-Permissive-2.0"},
+  "artifacts":[{"artifact_id":"resolution_en","title":"Final resolution","language":"en","version":"final","content":"Resolution 4. The council approved EUR 25,000 for the library roof on 2026-10-10, conditional on a structural inspection."}]
+}

@@ -1,0 +1,25 @@
+{
+  "mode": "RECORDED_REPLAY",
+  "provenance": "synthetic_demo_not_live_evidence",
+  "model": "swiss-ai/Apertus-v1.5-70B",
+  "latency_ms": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "claims": [
+    {
+      "claim_id": "a1",
+      "claim_type": "APPROVAL",
+      "statement": "The final decision approves at most EUR 40,000 and requires legal review; EUR 60,000 is only proposed in an earlier annex.",
+      "actor": "Council",
+      "action": "fund energy center",
+      "amount": "40000",
+      "currency": "EUR",
+      "condition": "legal review required",
+      "decision_status": "APPROVED",
+      "source_artifact": "minutes_de",
+      "source_span": "Der Rat genehmigt für das Energiezentrum höchstens 40.000 EUR. Die Freigabe gilt vorbehaltlich der rechtlichen Prüfung.",
+      "language": "de",
+      "confidence": 0.98
+    }
+  ]
+}

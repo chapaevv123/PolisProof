@@ -1,0 +1,29 @@
+{
+  "schema_version": "polisproof.live-smoke.v1",
+  "timestamp": "2026-10-12T20:47:29.8854420Z",
+  "endpoint": "https://router.huggingface.co/v1/chat/completions",
+  "authentication": {"verified": true, "account_type": "user", "auth_type": "access_token", "secret_recorded": false},
+  "pricing_usd_per_million_tokens": {
+    "8b": {"provider": "publicai", "input": 0.1, "output": 0.2, "source": "HF authenticated /v1/models catalog"},
+    "70b": {"provider": "featherless-ai", "input": 0.875, "output": 2.075, "source": "Featherless request-pricing documentation"}
+  },
+  "runs": [
+    {
+      "lane": "8B", "requested_model": "swiss-ai/Apertus-8B-Instruct-2509:publicai", "response_model": "swiss-ai/apertus-8b-instruct", "provider_status_before_call": "live",
+      "prompt": "Reply exactly: POLISPROOF_OK", "max_output_tokens": 8, "http_status": 200, "response_id": "a30ccc8b-3012-4df0-afb5-a4bed9412db7", "output": "POLISPROOF_OK", "finish_reason": "stop", "latency_ms": 1746.573,
+      "usage": {"prompt_tokens": 69, "completion_tokens": 6, "total_tokens": 75, "cached_tokens": 0}, "calculated_cost_usd": 0.0000081
+    },
+    {
+      "lane": "70B", "requested_model": "swiss-ai/Apertus-70B-Instruct-2509:featherless-ai", "response_model": "swiss-ai/Apertus-70B-Instruct-2509", "provider_status_before_call": "live",
+      "prompt": "Reply exactly: POLISPROOF_OK", "max_output_tokens": 8, "http_status": 200, "response_id": "ab95e6f9-9353-4070-907a-3ab0c9999b35", "output": "POLISPROOF_OK", "finish_reason": "stop", "latency_ms": 7568.207,
+      "usage": {"prompt_tokens": 69, "completion_tokens": 6, "total_tokens": 75, "cached_tokens": 0}, "calculated_cost_usd": 0.000072825
+    }
+  ],
+  "calculated_cumulative_cost_usd": 0.000080925,
+  "cost_note": "Calculated from provider-reported tokens and inspected provider rates; the billing ledger was not returned in either completion response.",
+  "availability_notes": [
+    "The HF live catalog exposed the September 2025 instruct checkpoints used here.",
+    "swiss-ai/Apertus-v1.5-8B had no inference provider mapping at inspection time.",
+    "swiss-ai/Apertus-v1.5-70B had only a featherless-ai mapping with status error and no live providers in the router model detail."
+  ]
+}

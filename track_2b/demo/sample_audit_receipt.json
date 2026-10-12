@@ -1,0 +1,151 @@
+{
+  "schema_version": "polisproof.receipt.v1",
+  "execution_mode": "RECORDED_REPLAY",
+  "packet_id": "demo_conflict",
+  "artifact_hashes": {
+    "minutes_de": "9cebd2ec870fbfa6c6e360d9748e34b6ee5ef1ccee98470b62d168ac31e56688",
+    "annex_fr": "74b4b10d4e77efeeb88a02a664d155d9f4fddce7cb22faeb93e224bedd550f29",
+    "note_it": "46d8d77a605d8eb1a33ef5a65cb7ff883c3af74a301a97be3e7bdf672d06d4a0"
+  },
+  "claims": [
+    {
+      "claim_id": "c1",
+      "claim_type": "APPROVAL",
+      "statement": "The council approved up to EUR 40,000 for the energy center, subject to legal review.",
+      "actor": "Council",
+      "action": "fund energy center",
+      "amount": "40000",
+      "currency": "EUR",
+      "date": null,
+      "condition": "legal review required",
+      "decision_status": "APPROVED",
+      "source_artifact": "minutes_de",
+      "source_span": "Der Rat genehmigt für das Energiezentrum höchstens 40.000 EUR. Die Freigabe gilt vorbehaltlich der rechtlichen Prüfung.",
+      "source_hash": "9cebd2ec870fbfa6c6e360d9748e34b6ee5ef1ccee98470b62d168ac31e56688",
+      "language": "de",
+      "model_source": "RECORDED_REPLAY",
+      "model_version": "swiss-ai/Apertus-v1.5-8B",
+      "confidence": 0.98,
+      "verification_status": "BLOCKED",
+      "reason_codes": [
+        "AMOUNT_CONFLICT",
+        "MISSING_CONDITION"
+      ],
+      "escalation_reason": "AMOUNT_CONFLICT,MISSING_CONDITION"
+    },
+    {
+      "claim_id": "c2",
+      "claim_type": "EXPENDITURE",
+      "statement": "The proposed energy-center budget is EUR 60,000.",
+      "actor": "Council",
+      "action": "fund energy center",
+      "amount": "60000",
+      "currency": "EUR",
+      "date": null,
+      "condition": null,
+      "decision_status": "PROPOSED",
+      "source_artifact": "annex_fr",
+      "source_span": "Le budget proposé pour le centre énergétique est de 60 000 EUR.",
+      "source_hash": "74b4b10d4e77efeeb88a02a664d155d9f4fddce7cb22faeb93e224bedd550f29",
+      "language": "fr",
+      "model_source": "RECORDED_REPLAY",
+      "model_version": "swiss-ai/Apertus-v1.5-8B",
+      "confidence": 0.96,
+      "verification_status": "BLOCKED",
+      "reason_codes": [
+        "AMOUNT_CONFLICT",
+        "MISSING_CONDITION"
+      ],
+      "escalation_reason": "AMOUNT_CONFLICT,MISSING_CONDITION"
+    },
+    {
+      "claim_id": "c3",
+      "claim_type": "CONDITION",
+      "statement": "Approval is valid only after legal review.",
+      "actor": "Council",
+      "action": "fund energy center",
+      "amount": null,
+      "currency": null,
+      "date": null,
+      "condition": "legal review required",
+      "decision_status": "APPROVED",
+      "source_artifact": "note_it",
+      "source_span": "L'approvazione è valida solo dopo il controllo legale.",
+      "source_hash": "46d8d77a605d8eb1a33ef5a65cb7ff883c3af74a301a97be3e7bdf672d06d4a0",
+      "language": "it",
+      "model_source": "RECORDED_REPLAY",
+      "model_version": "swiss-ai/Apertus-v1.5-8B",
+      "confidence": 0.97,
+      "verification_status": "VERIFIED",
+      "reason_codes": [],
+      "escalation_reason": null
+    }
+  ],
+  "evidence": [
+    {
+      "claim_id": "c1",
+      "artifact_id": "minutes_de",
+      "exact_span": "Der Rat genehmigt für das Energiezentrum höchstens 40.000 EUR. Die Freigabe gilt vorbehaltlich der rechtlichen Prüfung.",
+      "source_hash": "9cebd2ec870fbfa6c6e360d9748e34b6ee5ef1ccee98470b62d168ac31e56688"
+    },
+    {
+      "claim_id": "c2",
+      "artifact_id": "annex_fr",
+      "exact_span": "Le budget proposé pour le centre énergétique est de 60 000 EUR.",
+      "source_hash": "74b4b10d4e77efeeb88a02a664d155d9f4fddce7cb22faeb93e224bedd550f29"
+    },
+    {
+      "claim_id": "c3",
+      "artifact_id": "note_it",
+      "exact_span": "L'approvazione è valida solo dopo il controllo legale.",
+      "source_hash": "46d8d77a605d8eb1a33ef5a65cb7ff883c3af74a301a97be3e7bdf672d06d4a0"
+    }
+  ],
+  "verification_status": "BLOCKED",
+  "reason_codes": [
+    "AMOUNT_CONFLICT",
+    "MISSING_CONDITION"
+  ],
+  "route": [
+    {
+      "claim_id": "packet",
+      "lane": "8B",
+      "reason": "initial extraction",
+      "model": "swiss-ai/Apertus-v1.5-8B",
+      "latency_ms": 842,
+      "input_tokens": 304,
+      "output_tokens": 241
+    },
+    {
+      "claim_id": "disputed-claims",
+      "lane": "70B",
+      "reason": "AMOUNT_CONFLICT,MISSING_CONDITION",
+      "model": "swiss-ai/Apertus-v1.5-70B",
+      "latency_ms": 0,
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  ],
+  "model_identifiers": [
+    "swiss-ai/Apertus-v1.5-70B",
+    "swiss-ai/Apertus-v1.5-8B"
+  ],
+  "prompt_template_sha256": "2ac4d0199478336ed8aaa155046e2306d8083af64131f7900bccf2ace93c2d18",
+  "parser_repair_count": 0,
+  "latency_ms": 842,
+  "token_counts": {
+    "input": 304,
+    "output": 241
+  },
+  "human_report": {
+    "headline": "Decision status: BLOCKED",
+    "summary": "3 atomic claim(s); 2 verification reason(s).",
+    "reasons": [
+      "AMOUNT_CONFLICT",
+      "MISSING_CONDITION"
+    ],
+    "disclaimer": "Model and fallback outputs are non-authoritative; evidence checks determine the verdict."
+  },
+  "timestamp": "2026-10-12T20:26:36.314619+00:00",
+  "output_hash": "793690c877c4a8663b72d13cf834b8def0a01434eb0e32ad8e44d5209f5d0faa"
+}

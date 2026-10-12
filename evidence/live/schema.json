@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://polisproof.example/schemas/live-run-v1.json",
+  "title": "PolisProof sanitized live run",
+  "type": "object",
+  "required": ["schema_version", "corpus_id", "fixture_id", "mode", "timestamp", "prompt_version", "endpoint_class", "models", "calls", "verification_result", "escalation", "errors"],
+  "properties": {
+    "schema_version": {"const": "polisproof.live-run.v1"},
+    "corpus_id": {"const": "POLISPROOF_EVAL_V1"},
+    "fixture_id": {"type": "string"},
+    "mode": {"enum": ["8B", "70B", "ROUTED"]},
+    "timestamp": {"type": "string"},
+    "prompt_version": {"type": "string"},
+    "endpoint_class": {"const": "OPENAI_COMPATIBLE"},
+    "models": {"type": "array", "items": {"type": ["string", "null"]}},
+    "calls": {"type": "array"},
+    "verification_result": {"type": "string"},
+    "escalation": {"type": "boolean"},
+    "errors": {"type": "array"}
+  },
+  "additionalProperties": true
+}

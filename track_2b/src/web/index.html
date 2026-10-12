@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PolisProof verifies multilingual public decisions against exact source evidence.">
+  <title>PolisProof — Sovereign AI. Verifiable Public Decisions.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="PolisProof home"><span class="brand-mark">P</span><span>POLISPROOF</span></a>
+    <div class="top-meta"><span class="system-dot"></span><span id="server-state">LOCAL SERVER</span><span class="divider"></span><b id="mode-top">RECORDED REPLAY</b></div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">EVIDENCE-FIRST DECISION INTELLIGENCE</p>
+        <h1>Sovereign AI.<br><span>Verifiable Public Decisions.</span></h1>
+        <p class="lede">PolisProof turns multilingual minutes, annexes and legal notes into evidence-bound claims—then blocks contradictions before they become policy.</p>
+        <div class="trust-row"><span>Exact source spans</span><span>Deterministic checks</span><span>Tamper-evident receipts</span></div>
+      </div>
+      <aside class="demo-brief">
+        <div class="brief-label">DEMO QUESTION</div>
+        <p>Was <strong>€60,000</strong> approved unconditionally?</p>
+        <div class="brief-answer"><span>Expected evidence</span><b>No — €40,000, after legal review.</b></div>
+      </aside>
+    </section>
+    <section class="control-bar" aria-label="Demo controls">
+      <div class="case-control"><label for="case-select">DEMO CASE</label><select id="case-select"><option value="demo_conflict">Multilingual budget conflict</option><option value="clean_approval">Clean approval</option><option value="prompt_injection">Malicious appendix</option></select></div>
+      <div class="mode-explainer"><span class="status-pill replay">RECORDED REPLAY</span><span>Deterministic demo using bundled synthetic fixtures. Not live inference.</span></div>
+      <button id="compile" class="primary"><span>Run analysis</span><span aria-hidden="true">→</span></button>
+      <label class="upload">Upload document<input id="upload" type="file" accept=".txt,.json,text/plain,application/json"></label>
+    </section>
+    <section class="workspace">
+      <article class="panel documents-panel">
+        <div class="panel-head"><div><span class="step">01</span><h2>Source documents</h2></div><span id="doc-count" class="count">3 FILES</span></div>
+        <p class="panel-copy">Inspect the original record. Highlighted passages are the financial and authorization evidence.</p>
+        <div id="source-list" class="source-list"></div>
+      </article>
+      <article class="panel analysis-panel">
+        <div class="panel-head"><div><span class="step">02</span><h2>Evidence analysis</h2></div><span id="claim-count" class="count">READY</span></div>
+        <p class="panel-copy">Claims must cite an exact span from a hashed source document.</p>
+        <div id="claim-list" class="empty-state"><span class="empty-icon">⌁</span><b>Ready to verify</b><p>Select a case and run the analysis.</p></div>
+      </article>
+      <article class="panel verdict-panel">
+        <div class="panel-head"><div><span class="step">03</span><h2>Decision gate</h2></div><span class="rules-badge">RULE-OWNED</span></div>
+        <p class="panel-copy">Apertus extracts. Deterministic rules decide.</p>
+        <div id="status" class="verdict waiting"><small>FINAL VERDICT</small><strong>WAITING</strong></div>
+        <div id="reasons" class="reason-list"></div>
+        <div id="truth" class="decision-record hidden"><small>VERIFIED DECISION RECORD</small><div><span>Approved ceiling</span><b>€40,000</b></div><div><span>Required condition</span><b>Legal review</b></div></div>
+      </article>
+    </section>
+    <section id="trace" class="audit-strip hidden" aria-live="polite">
+      <div><small>APERTUS EXECUTION</small><b id="execution">—</b><span id="mode-note">—</span></div>
+      <div><small>MODEL ROUTE</small><b id="route">—</b><span id="routing">—</span></div>
+      <div class="receipt-cell"><small>AUDIT RECEIPT</small><code id="hash">—</code><button id="download" class="secondary">Download JSON receipt ↓</button></div>
+    </section>
+    <section class="architecture">
+      <div><p class="eyebrow">TECHNICAL ARCHITECTURE</p><h2>Models propose. Evidence decides.</h2><p>Open Apertus models produce atomic claims; PolisProof binds them to immutable source hashes and applies application-owned verification rules.</p></div>
+      <ol class="flow"><li><span>01</span><b>Normalize & hash</b><small>Multilingual source packet</small></li><li><span>02</span><b>Apertus 8B</b><small>Atomic claim extraction</small></li><li><span>03</span><b>Evidence gate</b><small>Exact-span verification</small></li><li><span>04</span><b>Apertus 70B</b><small>Disputed context only</small></li><li><span>05</span><b>Audit receipt</b><small>Reproducible JSON proof</small></li></ol>
+    </section>
+  </main>
+  <footer><span>POLISPROOF · MAGNATSV · HACK APERTUS 2026</span><span>Fictional demo materials · No telemetry · Local-first</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

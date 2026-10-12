@@ -1,0 +1,53 @@
+{
+  "schema_version": "polisproof.live-run.v1",
+  "corpus_id": "POLISPROOF_EVAL_V1",
+  "fixture_id": "clean_approval_en",
+  "category": "CLEAN",
+  "languages": [
+    "en"
+  ],
+  "mode": "8B",
+  "timestamp": "2026-10-12T21:02:31.539932+00:00",
+  "prompt_version": "polisproof-extract-v2",
+  "endpoint_class": "OPENAI_COMPATIBLE",
+  "models": [
+    null
+  ],
+  "calls": [
+    {
+      "lane": "8B",
+      "error": "HTTPError",
+      "http_status": 403,
+      "error_detail": "<!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!-->\n<html class=\"no-js\" lang=\"en-US\">\n    <!--<![endif]-->\n    <head>\n        <title>Access denied | api.publicai.co used Cloudflare to restrict access | api.publicai.co | Cloudflare</title>\n        <meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/main.css\" /> <script>\n  (function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById(\"error-feedback-survey\"),d=document.getElementById(\"error-feedback-success\"),b=new XMLHttpRequest;a={event:\"feedback clicked\",properties:{errorCode: 1010 },helpful:a,version: 1 };b.open(\"POST\",\"https://sparrow.cloudflare.com/api/v1/event\");b.setRequestHeader(\"Content-Type\",\"application/json\");b.setRequestHeader(\"Sparrow-Source-Key\",\"c771f0e4b54944bebf4261d44bd79a1e\");\nb.send(JSON.stringify(a));c.classList.add(\"feedback-hidden\");d.classList.remove(\"feedback-hidden\")};document.addEventListener(\"DOMContentLoaded\",function(){var a=document.getElementById(\"error-feedback\"),c=document.getElementById(\"feedback-button-yes\"),d=document.getElementById(\"feedback-button-no\");\"classList\"in a&&(a.classList.remove(\"feedback-hidden\"),c.addEventListener(\"click\",function(){e(!0)}),d.addEventListener(\"click\",function(){e(!1)}))})}})();\n</script>\n        <script\n            defer\n            src=\"https://performance.radar.cloudflare.com/beacon.js\"\n        ></script>\n    </head>\n    <body>\n        <div id=\"cf-wrapper\">\n            <div\n               ",
+      "latency_ms": 441.817
+    }
+  ],
+  "parser_attempts": 1,
+  "schema_valid_first_attempt": false,
+  "schema_valid_after_repair": false,
+  "parser_repair_count": 0,
+  "claims_produced": 0,
+  "claims_expected": 1,
+  "claims_correct": 0,
+  "claim_precision_n": 0,
+  "claim_precision_d": 0,
+  "claim_recall_n": 0,
+  "claim_recall_d": 1,
+  "citations_correct": 0,
+  "citations_produced": 0,
+  "evidence_supported": 0,
+  "evidence_total": 0,
+  "verification_result": "MODEL_UNAVAILABLE",
+  "reason_codes": [],
+  "expected_status": "VERIFIED",
+  "expected_reason_codes": [],
+  "status_correct": false,
+  "reason_codes_correct": true,
+  "escalation": false,
+  "escalation_reason": null,
+  "instruction_leakage": false,
+  "unsafe_override": false,
+  "errors": [
+    "HTTPError"
+  ]
+}
